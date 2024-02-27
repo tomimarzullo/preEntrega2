@@ -1,0 +1,219 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* font-family: ; */
+}
+
+
+/* TITULO */
+h1 {
+    padding: 25px;
+    text-align: center;
+    font-style: italic;
+}
+
+h2 {
+    padding: 25px;
+    text-align: center;
+}
+
+
+/* HEADER */
+header {
+    background-color: black;
+    width: 100%;
+    height: auto;
+    padding: 15px;
+}
+
+.barra {
+    display: flex;
+    justify-content: center;
+}
+
+.barra ul li {
+    font-size: 12px;
+    list-style: none;
+    display: inline-block;
+}
+
+.barra ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.barra a:hover {
+    color: blue;
+}
+
+
+/* MAIN */
+main {
+    width: 100%;
+    height: auto;
+    color: white;
+}
+
+.logo {
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.call {
+    
+    padding: 25px;
+    background-color: black;
+}
+
+main img {
+    width: 150px;
+}
+
+.conteiner {
+    width: 100%;
+    padding: 25px;
+}
+
+/* tienda */
+.ropa-venta {
+    padding: 10px;
+    margin: 20px auto;
+    width: 200px;
+    height: auto;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.ropa-venta img {
+    width: 180px;
+}
+
+.ropa-venta p {
+    padding: 10px;
+    color: white;
+    font-size: 16px;
+}
+
+.ropa-venta a {
+    padding: 5px;
+    font-size: 10px;
+    color: black;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 5px;
+}
+
+
+/* FOOTER */
+footer {
+    width: 100%;
+    height: auto;
+    background-color: black;
+    padding: 20px;
+}
+
+
+footer p{
+    color: white;
+    font-size: 16px;
+    text-align: center;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+.iconos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.iconos a i{
+    font-size: 25px;
+    padding: 10px;
+}
+
+.iconos a i:hover{
+    color: blue;
+}
+
+
+
+
+
+
+/* Media quaries */
+@media only screen and (min-width:370px) {
+
+    .iconos {
+        display: grid;
+        grid-template-columns: 45% auto 45%;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "texto texto texto"
+        "wpp instagram face";
+        justify-items: center;
+
+    }
+
+    .iconos {
+        width: auto;
+    }
+
+    .texto-footer{
+        grid-area: texto;
+    }
+
+    .wpp{
+        grid-area: wpp;
+        justify-self: end;
+    } 
+
+    .instagram{
+        grid-area: instagram;
+    }
+
+    .face{
+        grid-area: face;
+        justify-self: start;
+    }
+}
+
+@media only screen and (min-width:600px) {
+
+    .barra ul li a {
+        padding: 30px;
+        font-size: 16px;
+    }
+
+    .conteiner {
+        padding: 80px;
+        
+    }
+
+    .cards-ropa {
+        display: flex;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
