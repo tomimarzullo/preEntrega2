@@ -65,22 +65,73 @@ main {
     justify-content: center;
 }
 
-.call {
-    width: 100%;
-    padding: 25px;
-    
-    background-color: black;
-    border-radius: 10px;
-}
-
 main img {
     width: 150px;
 }
 
-.conteiner {
+.call {
     width: 100%;
     padding: 25px;
+    background-color: black;
+    border-radius: 10px;
 }
+
+.galeria {
+    width:100%;
+    height: auto;
+    display: grid;
+    background-color: gray;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat (10, 1fr);
+    grid-template-areas: 
+    "gal1"
+    "gal2"
+    "gal3"
+    "gal4"
+    "gal5"
+    "gal6"
+    "gal7"
+    "gal8"
+    "gal9"
+    "gal10";
+}
+
+.item {
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+.item1 {
+    grid-area: gal1;
+}
+.item2 {
+    grid-area: gal2;
+}
+.item3 {
+    grid-area: gal3;
+}
+.item4 {
+    grid-area: gal4;
+}
+.item5 {
+    grid-area: gal5;
+}
+.item6 {
+    grid-area: gal6;
+}
+.item7 {
+    grid-area: gal7;
+}
+.item8 {
+    grid-area: gal8;
+}
+.item9 {
+    grid-area: gal9;
+}
+.item10 {
+    grid-area: gal10;
+}
+
 
 /* tienda */
 .ropa-venta {
@@ -140,11 +191,14 @@ main img {
 
 .conteiner_contacto {
     padding: 25px;
-    
     width: 100%;
     height: auto;
     background-color: rgb(75, 75, 75);
 
+}
+
+.formulario {
+    border: ;
 }
 
 
