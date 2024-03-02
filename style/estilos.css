@@ -161,6 +161,47 @@ main img {
 
 
 
+/* nosotros */
+.equipo {
+    width: 100%;
+    height: 280px;
+    background-image:url(../multimedia/equipo.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+.nos {
+    margin: 30px auto;
+    padding: 50px;
+    width: 300px;
+    height: auto;
+    background-color: rgb(70, 70, 70);
+    border-radius: 100%;
+}
+
+.nos i{
+    display: flex;
+    justify-content: center;
+}
+
+.proposito {
+    font-size: 18px;
+    color: rgb(17, 17, 152);
+    text-align: center;
+}
+
+.p-nos {
+    text-align: center;
+    padding: 20px;
+    color: black;
+}
+
+
+
+
+
+
 /* tienda */
 .tabla-medidas {
     padding: 25px;
@@ -214,11 +255,28 @@ main img {
     border-radius: 5px;
 }
 
+.medios-depago {
+    margin: 25px auto;
+    padding: 25px;
+    width: 250px;
+    height: auto;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.medios-depago p {
+    font-size: 20px;
+}
+
+.medios-depago ul li {
+    font-size: 16px;
+}
+
 
 /* contacto */
 .main_contacto {
     width: 100%;
-    height: 100vh;
+    height: auto;
 }
 
 .call-contacto {
@@ -241,6 +299,7 @@ main img {
 }
 
 .conteiner_contacto {
+    margin-bottom: 25px;
     padding: 25px;
     width: 100%;
     height: auto;
