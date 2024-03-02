@@ -19,16 +19,31 @@
 
     <!-- HEADER -->
     <header>
-
-        <nav class="barra">
-            
-            <ul>
-                <li><a href="./index.html">INICIO</a></li>
-                <li><a href="./pages/nosotros.html">NOSOTROS</a></li>
-                <li><a href="./pages/tienda.html">TIENDA</a></li>
-                <li><a href="./pages/contacto.html">CONTACTO</a></li>
-            </ul>
-        </nav>
+            <nav class="navbar navbar-expand-lg black">
+                <div class="container-fluid">
+                    <a class="navbar-brand text-light" href="./index.html">INICIO</a>
+                    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item white">
+                                <a class="nav-link active text-light" href="./pages/nosotros.html">NOSOTROS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active text-light" href="./pages/tienda.html">TIENDA</a>
+                            <li>
+                            </li>
+                                <a class="nav-link active text-light" href="./pages/contacto.html">CONTACTO</a>
+                            </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2 text-dark" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Buscar</button>
+                    </form>
+                    </div>
+                </div>
+            </nav>
 
     </header>
 

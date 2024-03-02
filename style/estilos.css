@@ -36,25 +36,12 @@ header {
     padding: 15px;
 }
 
-.barra {
-    display: flex;
-    justify-content: center;
+.black {
+    background-color: black;
 }
 
-.barra ul li {
-    font-size: 14px;
-    list-style: none;
-    display: inline-block;
-}
-
-.barra ul li a {
+.white {
     color: white;
-    text-decoration: none;
-    padding: 5px;
-}
-
-.barra a:hover {
-    color: blue;
 }
 
 
@@ -175,6 +162,21 @@ main img {
 
 
 /* tienda */
+.tabla-medidas {
+    padding: 25px;
+    margin-top: 30px;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+.medidas {
+    width: 180px;
+}
+
 .cards-ropa{
     width: 100%;
     height: auto;
@@ -224,9 +226,9 @@ main img {
     padding: 60px;
     width: 100%;
     height: auto;
-    background-image: url(../multimedia/photo7.jpg);
-    background-position: center;
-    background-size: cover;
+    /* background-image: url(../multimedia/photo7.jpg); */
+    /* background-position: center; */
+    /* background-size: cover; */
 }
 
 .call-contacto h2 {
@@ -384,7 +386,8 @@ footer a{
     height: auto;
     padding: 20px;
     display: grid;
-    grid-template-columns: 1fr 1fr;    grid-template-rows: repeat (3, 500px);
+    grid-template-columns: 1fr 1fr;   
+    grid-template-rows: repeat (3, 500px);
     grid-template-areas: 
     "gal1 gal2"
     "gal3 gal4"
@@ -400,6 +403,20 @@ footer a{
 
 }
 
+
+@media only screen and (min-width: 1024px) {
+    .galeria{
+        width:100%;
+        height: auto;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;    
+        grid-template-rows: repeat (2, 500px);
+        grid-template-areas: 
+        "gal1 gal2 gal3"
+        "gal4 gal5 gal6";
+        }
+}
 
 
 
